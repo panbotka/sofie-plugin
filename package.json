@@ -1,8 +1,8 @@
 {
   "name": "sofie-replace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
-  "description": "Chrome/Brave extension that replaces the name Sofie Elefteriadu with Sofie Chodurová.",
+  "description": "Chrome/Brave extension that replaces the name Sofie Elefteriadu with Sofie Chodúrová.",
   "license": "MIT",
   "scripts": {
     "test": "node --test"

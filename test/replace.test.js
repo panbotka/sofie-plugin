@@ -4,33 +4,33 @@ const { replaceText } = require('../src/replace.js');
 
 const cases = [
   // Nominative
-  ['Sofie Elefteriadu zpívá.', 'Sofie Chodurová zpívá.'],
-  ['Zpěvačka Sofia Elefteriadou vystoupí.', 'Zpěvačka Sofia Chodurová vystoupí.'],
+  ['Sofie Elefteriadu zpívá.', 'Sofie Chodúrová zpívá.'],
+  ['Zpěvačka Sofia Elefteriadou vystoupí.', 'Zpěvačka Sofia Chodúrová vystoupí.'],
   // Genitive
-  ['Dopis od Sofie Elefteriadu.', 'Dopis od Sofie Chodurové.'],
-  ['Koncert bez Sofie Elefteriadu.', 'Koncert bez Sofie Chodurové.'],
+  ['Dopis od Sofie Elefteriadu.', 'Dopis od Sofie Chodúrové.'],
+  ['Koncert bez Sofie Elefteriadu.', 'Koncert bez Sofie Chodúrové.'],
   // Dative
-  ['Šli jsme k Sofii Elefteriadu.', 'Šli jsme k Sofii Chodurové.'],
-  ['Díky Sofii Elefteriadu.', 'Díky Sofii Chodurové.'],
+  ['Šli jsme k Sofii Elefteriadu.', 'Šli jsme k Sofii Chodúrové.'],
+  ['Díky Sofii Elefteriadu.', 'Díky Sofii Chodúrové.'],
   // Accusative
-  ['Mám dárek pro Sofii Elefteriadu.', 'Mám dárek pro Sofii Chodurovou.'],
-  ['Viděl jsem Sofii Elefteriadu.', 'Viděl jsem Sofii Chodurovou.'],
+  ['Mám dárek pro Sofii Elefteriadu.', 'Mám dárek pro Sofii Chodúrovou.'],
+  ['Viděl jsem Sofii Elefteriadu.', 'Viděl jsem Sofii Chodúrovou.'],
   // Locative
-  ['Článek o Sofii Elefteriadu.', 'Článek o Sofii Chodurové.'],
+  ['Článek o Sofii Elefteriadu.', 'Článek o Sofii Chodúrové.'],
   // Instrumental
-  ['Rozhovor se Sofií Elefteriadu.', 'Rozhovor se Sofií Chodurovou.'],
-  ['Rozhovor se Sofii Elefteriadu.', 'Rozhovor se Sofii Chodurovou.'],
+  ['Rozhovor se Sofií Elefteriadu.', 'Rozhovor se Sofií Chodúrovou.'],
+  ['Rozhovor se Sofii Elefteriadu.', 'Rozhovor se Sofii Chodúrovou.'],
   // Surname alone
-  ['Paní Elefteriadu přišla.', 'Paní Chodurová přišla.'],
-  ['Mluvil jsem s paní Elefteriadu.', 'Mluvil jsem s paní Chodurovou.'],
-  ['Kytice od paní Elefteriadu.', 'Kytice od paní Chodurové.'],
+  ['Paní Elefteriadu přišla.', 'Paní Chodúrová přišla.'],
+  ['Mluvil jsem s paní Elefteriadu.', 'Mluvil jsem s paní Chodúrovou.'],
+  ['Kytice od paní Elefteriadu.', 'Kytice od paní Chodúrové.'],
   // Spelling variants and letter case
-  ['Sofie Eleftheriadou', 'Sofie Chodurová'],
-  ['SOFIE ELEFTERIADU', 'SOFIE CHODUROVÁ'],
-  ['sofie elefteriadu', 'sofie chodurová'],
-  ['Sofie Elefteriadu', 'Sofie Chodurová'],
+  ['Sofie Eleftheriadou', 'Sofie Chodúrová'],
+  ['SOFIE ELEFTERIADU', 'SOFIE CHODÚROVÁ'],
+  ['sofie elefteriadu', 'sofie chodúrová'],
+  ['Sofie Elefteriadu', 'Sofie Chodúrová'],
   // Multiple occurrences
-  ['Sofie Elefteriadu a se Sofií Elefteriadu.', 'Sofie Chodurová a se Sofií Chodurovou.'],
+  ['Sofie Elefteriadu a se Sofií Elefteriadu.', 'Sofie Chodúrová a se Sofií Chodúrovou.'],
 ];
 
 for (const [input, expected] of cases) {

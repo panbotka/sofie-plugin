@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Sofie Replace",
-  "version": "1.0.0",
-  "description": "Replaces the name Sofie Elefteriadu with Sofie Chodurová on every web page, with Czech declension.",
+  "version": "1.0.1",
+  "description": "Replaces the name Sofie Elefteriadu with Sofie Chodúrová on every web page, with Czech declension.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

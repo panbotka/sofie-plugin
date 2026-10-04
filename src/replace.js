@@ -37,12 +37,12 @@
   const QUICK = /eleft/i;
 
   const FORMS = {
-    nom: 'Chodurová', // Sofie Chodurová
-    gen: 'Chodurové', // od Sofie Chodurové
-    dat: 'Chodurové', // k Sofii Chodurové
-    acc: 'Chodurovou', // pro Sofii Chodurovou
-    loc: 'Chodurové', // o Sofii Chodurové
-    ins: 'Chodurovou', // se Sofií Chodurovou
+    nom: 'Chodúrová', // Sofie Chodúrová
+    gen: 'Chodúrové', // od Sofie Chodúrové
+    dat: 'Chodúrové', // k Sofii Chodúrové
+    acc: 'Chodúrovou', // pro Sofii Chodúrovou
+    loc: 'Chodúrové', // o Sofii Chodúrové
+    ins: 'Chodúrovou', // se Sofií Chodúrovou
   };
 
   /** Returns the grammatical case for a match based on the first name form and preposition. */

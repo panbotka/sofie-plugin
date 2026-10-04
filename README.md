@@ -1,15 +1,15 @@
 # Sofie Replace
 
 A tiny Chrome / Brave extension that replaces the name **Sofie Elefteriadu** with
-**Sofie Chodurová** on every web page you visit. It handles Czech grammatical cases.
+**Sofie Chodúrová** on every web page you visit. It handles Czech grammatical cases.
 
 | Original | Replaced |
 |---|---|
-| Sofie Elefteriadu zpívá. | Sofie Chodurová zpívá. |
-| Dopis od Sofie Elefteriadu. | Dopis od Sofie Chodurové. |
-| Mám dárek pro Sofii Elefteriadu. | Mám dárek pro Sofii Chodurovou. |
-| Rozhovor se Sofií Elefteriadu. | Rozhovor se Sofií Chodurovou. |
-| Mluvil jsem s paní Elefteriadu. | Mluvil jsem s paní Chodurovou. |
+| Sofie Elefteriadu zpívá. | Sofie Chodúrová zpívá. |
+| Dopis od Sofie Elefteriadu. | Dopis od Sofie Chodúrové. |
+| Mám dárek pro Sofii Elefteriadu. | Mám dárek pro Sofii Chodúrovou. |
+| Rozhovor se Sofií Elefteriadu. | Rozhovor se Sofií Chodúrovou. |
+| Mluvil jsem s paní Elefteriadu. | Mluvil jsem s paní Chodúrovou. |
 
 ## Installation
 
@@ -46,9 +46,9 @@ on the extension's card in `brave://extensions`.
 
 ## Known limitations
 
-- **Genitive without a preposition** ("koncert Sofie Elefteriadu") becomes "koncert Sofie Chodurová",
+- **Genitive without a preposition** ("koncert Sofie Elefteriadu") becomes "koncert Sofie Chodúrová",
   because "Sofie" looks the same in the nominative and the genitive.
-- **Sofii without diacritics after "se"** is assumed to be the instrumental case ("se Sofii" → "Chodurovou").
+- **Sofii without diacritics after "se"** is assumed to be the instrumental case ("se Sofii" → "Chodúrovou").
 - A name split across HTML elements (e.g. `<b>Sofie</b> Elefteriadu`) is only partly handled:
   the surname is replaced, but in the nominative.
 - Text inside images, videos, PDFs, and closed Shadow DOM is not changed.

@@ -1,6 +1,6 @@
 # CLAUDE.md — sofie-plugin
 
-Chrome/Brave Manifest V3 extension that replaces "Sofie Elefteriadu" with "Sofie Chodurová"
+Chrome/Brave Manifest V3 extension that replaces "Sofie Elefteriadu" with "Sofie Chodúrová"
 on every page, including Czech declension of the surname. Everything in the repo is in **English**
 (code, comments, docs, commits). Only the test sentences are Czech.
 
@@ -18,12 +18,12 @@ on every page, including Czech declension of the surname. Everything in the repo
 
 The first name is left untouched; only the surname is rewritten. The case is decided in
 `grammaticalCase(first, prep)`:
-- `Sofií` → instrumental (Chodurovou).
-- `Sofii` → dative or locative (Chodurové) after k/ke/díky/proti/o/v/při/po…
-  Otherwise accusative (Chodurovou).
-- `Sofie`/`Sofia`/no first name → genitive (Chodurové) after od/do/z/u/bez…
+- `Sofií` → instrumental (Chodúrovou).
+- `Sofii` → dative or locative (Chodúrové) after k/ke/díky/proti/o/v/při/po…
+  Otherwise accusative (Chodúrovou).
+- `Sofie`/`Sofia`/no first name → genitive (Chodúrové) after od/do/z/u/bez…
   With no first name, the dative, locative, accusative and instrumental prepositions also apply.
-  The default is the nominative (Chodurová).
+  The default is the nominative (Chodúrová).
 - An optional `paní` between the preposition and the name is allowed.
 
 When adding a rule, add a test case to `test/replace.test.js` first.
@@ -36,7 +36,7 @@ When adding a rule, add a test case to `test/replace.test.js` first.
    Xvfb :99 &   export DISPLAY=:99
    python3 -m http.server 8731 --directory test &
    agent-browser close; agent-browser --extension "$PWD" open http://localhost:8731/fixture.html
-   agent-browser eval "document.body.innerText"   # expect Chodurová/Chodurovou, textarea unchanged
+   agent-browser eval "document.body.innerText"   # expect Chodúrová/Chodúrovou, textarea unchanged
    agent-browser close
    ```
    Clean up by PID (`kill <pid>`), **not** with `pkill -f "Xvfb :99"`. That pattern also
